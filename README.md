@@ -1,32 +1,20 @@
-# _Sample project_
+# Automatic Plant Watering System
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+## Overview
 
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
+The Automatic Plant Watering System is a project built with the ESP32 IoT Development Framework (ESP-IDF). It enables automated watering of plants using a water pump. Additionally, it supports scheduled watering times and manual control via a web application. This project is designed to provide a versatile and efficient solution for maintaining optimal hydration levels for plants.
 
+## Features
 
+- **Automated Watering:** Activates a water pump to irrigate the plants at preconfigured times or manually through a web application.
+- **Scheduled Watering:** Allows preconfigured watering times to ensure regular hydration for the plants.
+- **Manual Control via Web Application:** Enables manual control of the watering system through a user-friendly web application.
+- **ESP-IDF Framework:** Developed using the ESP32 IoT Development Framework for reliable and efficient operation.
+- **Configurable Parameters:** Easily configure watering duration and other parameters through the web application.
 
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
+## Components
 
-## Example folder contents
-
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
-
-```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
-```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
+- **ESP32 Microcontroller:** Controls the entire system and manages communication with the water pump and the web application.
+- **Water Pump:** Activates to deliver water to the plants when triggered by scheduled times or manual control.
+- **ESP-IDF:** The ESP32 IoT Development Framework used for programming the ESP32.
+- **Web Application:** A user interface for manual control accessible through a web browser.
